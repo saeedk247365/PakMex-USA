@@ -1,0 +1,27 @@
+{
+  "defaults": {
+    "store": {
+      "module": "greenlock-store-fs"
+    },
+    "challenges": {
+      "http-01": {
+        "module": "acme-http-01-standalone"
+      }
+    },
+    "renewOffset": "-45d",
+    "renewStagger": "3d",
+    "accountKeyType": "EC-P256",
+    "serverKeyType": "RSA-2048",
+    "subscriberEmail": "saeedk247365@gmail.com"
+  },
+  "sites": [
+    {
+      "subject": "pakmexexporters.com",
+      "altnames": [
+        "pakmexexporters.com",
+        "www.pakmexexporters.com"
+      ],
+      "renewAt": 1
+    }
+  ]
+}

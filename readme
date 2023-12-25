@@ -1,0 +1,5 @@
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+npx greenlock init --config-dir ./greenlock.d --maintainer-email 'saeedk247365@gmail.com'
+npx greenlock add --subject pakmexexporters.com --altnames "pakmexexporters.com,www.pakmexexporters.com"

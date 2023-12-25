@@ -1,0 +1,173 @@
+<section id="footer" style="background-color: #151f24;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h2 style="color: white;text-align: center;font-weight: bold;margin-bottom: 30px;font-size: 40px;">Contact Information</h2>
+
+
+                <div class="col-sm-12" style="text-align: center;">
+                    <div class="footer_1">
+                        <h2>USA</h2>
+
+                        <ul>
+                            <li>Christian Angueira, CEO</li>
+                            <li>Mayra Angueira Regional Manager</li>
+                            <li>CMI Logistics, Inc DBA Atenas Gallery Stone</li>
+                            <li><a href="https://api.whatsapp.com/send?phone=+1(407) 300-1618&text=hello" target="_blank">Whatsapp &amp; Tel. +1(407) 300-1618</a></li>
+                            <li><a href="mailto:atenasgallerystone@gmail.com">E-mail: atenasgallerystone@gmail.com </a></li>
+                            <li><a  href="https://www.google.com/maps/dir/40.430933,-3.6246288/495+E+Lancaster+Rd,+Orlando,+FL+32809,+USA/@26.2412323,-86.5562168,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ced9d22cec3:0x474d81be281dc03b!2m2!1d-81.3721251!2d28.4659949?entry=ttu" target="_blank">Address: 495 E. Lancaster Rd, Orlando, FL 32809</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="col-sm-12">
+                <div class="footer_2" style="margin-top: 2rem;justify-content: center;display: flex;gap: 2rem;">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://www.facebook.com/PakMexTraders?mibextid=ZbWKwL" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://instagram.com/pakmextraders?igshid=MWk5NW9oaHNqZDhtNQ==" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer_main" class="clearfix">
+    <div class="col-sm-12">
+        <div class="footer_main_1">
+            <p class="text-center">© PakMex. All Rights Reserved. Design by<b> Binary Barrier</b> </p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+            isClosed = false;
+
+        trigger.click(function () {
+            hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+            if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+        $('[data-toggle="fa fa-bars"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+    });
+</script>
+<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        var Page = (function () {
+
+            var $navArrows = $('#nav-arrows').hide(),
+                $navDots = $('#nav-dots').hide(),
+                $nav = $navDots.children('span'),
+                $shadow = $('#shadow').hide(),
+                slicebox = $('#sb-slider').slicebox({
+                    onReady: function () {
+
+                        $navArrows.show();
+                        $navDots.show();
+                        $shadow.show();
+
+                    },
+                    onBeforeChange: function (pos) {
+
+                        $nav.removeClass('nav-dot-current');
+                        $nav.eq(pos).addClass('nav-dot-current');
+
+                    }
+                }),
+
+                init = function () {
+
+                    initEvents();
+
+                },
+                initEvents = async function () {
+
+                    // add navigation events
+                    $navArrows.children(':first').on('click', function () {
+
+                        slicebox.next();
+                        return false;
+
+                    });
+
+                    $navArrows.children(':last').on('click', function () {
+
+                        slicebox.previous();
+                        return false;
+
+                    });
+
+                    $nav.each(function (i) {
+
+                        $(this).on('click', function (event) {
+
+                            var $dot = $(this);
+
+                            if (!slicebox.isActive()) {
+
+                                $nav.removeClass('nav-dot-current');
+                                $dot.addClass('nav-dot-current');
+
+                            }
+
+                            slicebox.jump(i + 1);
+                            return false;
+
+                        });
+
+                    });
+
+
+                    for (let i = 0; i < 99999999999999; i++) {
+                        await sleep(5000)
+                        slicebox.next();
+                    }
+
+                };
+
+            return { init: init };
+
+        })();
+
+        Page.init();
+
+    });
+
+    function sleep(ms) {
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        });
+    }
+
+
+</script>
+</body>
+
+</html>

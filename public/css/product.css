@@ -1,0 +1,214 @@
+/*
+Template Name:flooring
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+body{
+font-family: 'Alice', serif;
+  }
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+a:hover{
+text-decoration:none;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+}
+.space_left{
+padding-left:0; 
+} 
+.space_right{
+padding-right:0; 
+} 
+.space_all{
+padding:0; 
+} 
+.border_none_1{
+border:none!important;
+ }
+
+/********************* product_main ****************/
+#product_main{ 
+   background-image: url(../img/32.png);    
+   background-repeat: no-repeat;
+   background-size: cover; 
+ }
+.product_inner{ 
+    padding-top:100px;
+    padding-bottom:100px;
+	background-color: #245a92a1;
+ }
+.product_main_1{ 
+   text-align:center;
+   width:50%;
+   margin-left:auto;
+   margin-right:auto;
+ }
+.product_main_1 h2{ 
+  font-size:35px;
+  color:#fff;
+  font-weight:bold;
+ }
+.product_main_1 p{ 
+  font-size:18px;
+  color:#fff;
+  padding-top:20px;
+ }
+/********************* product_main_end ****************/
+/********************* product ****************/
+#product{ 
+ padding-top:30px;
+ padding-bottom:50px;
+ background-color: #fbfafa;
+ }
+.product_1 h2{ 
+ text-align:center;
+ color: #004b88;
+ font-size: 30px;
+ padding-bottom:40px;
+ padding-top:40px;
+ font-weight:bold;
+ }
+.product_1 h2:after{ 
+ display: inline-block;
+ width: 370px;
+ height: 2px;
+ background-color: #999;
+ vertical-align: middle;
+ margin-left: 4%;
+ content:"";
+ }
+.product_1 h2:before{ 
+ display: inline-block;
+ width: 370px;
+ height: 2px;
+ background-color: #999;
+ vertical-align: middle;
+ margin-right: 4%;
+ content:"";
+ }
+.product_2 img{ 
+  border-radius: 20px;
+ }
+.product_2 img:hover{ 
+  box-shadow: 0 0 13px 6px #053a75;
+ }
+.product_3 h2{ 
+  font-size:28px;
+  padding-top: 40px;
+  padding-bottom:20px;
+  color: #004b88;
+ }
+.product_3 p{ 
+  font-size:16px;
+  padding-bottom:20px;
+  color: #000;
+ }
+.product_3 li{ 
+  display:inline;
+  padding-right:10px;
+ }
+.product_3 li a:hover {
+    border: 1px solid #f0f0f0;
+    background: #b9b9b9;
+}
+.product_3 li a{
+    background: #f0f0f0;
+    border: 1px solid #b9b9b9;
+    padding: 8px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #004b88;
+}
+.product_4{ 
+   padding-bottom: 20px;
+   border-bottom: 1px dashed #eee;
+   margin-bottom:20px;
+ }
+/********************* product_end ****************/
+
+
+@media screen and (max-width : 767px){
+#product {
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+}
+.product_inner {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.product_1 h2:before {
+width: 30px;
+}
+.product_1 h2:after {
+width: 30px;
+}
+.product_1 h2 {
+font-size: 18px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+.product_3 h2 {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.product_4 {
+margin-bottom: 0px;
+padding-bottom:0px;
+}
+.product_3 ul{ 
+ margin-bottom:20px;
+ }
+}
+
+@media (min-width:470px) and (max-width:767px) { 
+}
+ 
+@media (min-width:768px) and (max-width:960px) { 
+.product_inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.product_1 h2:before {
+width: 150px;
+}
+.product_1 h2:after {
+width: 150px;
+}
+#product {
+padding-top: 0px;
+padding-bottom: 45px;
+}
+} 
+ 
+@media (min-width:961px) and (max-width:1200px) {
+.product_inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.product_1 h2:before {
+width: 150px;
+}
+.product_1 h2:after {
+width: 150px;
+}
+#product {
+padding-top: 0px;
+padding-bottom: 45px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}

@@ -1,0 +1,337 @@
+/*
+Template Name:flooring
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+body{
+font-family: 'Alice', serif;
+  }
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+a:hover{
+text-decoration:none;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+}
+.space_left{
+padding-left:0; 
+} 
+.space_right{
+padding-right:0; 
+} 
+.space_all{
+padding:0; 
+} 
+.border_none_1{
+border:none!important;
+ }
+
+/********************* product_details ****************/
+#product_details{ 
+   background-image: url(../img/37.jpg);    
+   background-repeat: no-repeat;
+   background-size: cover; 
+ }
+.product_inner{ 
+    padding-top:100px;
+    padding-bottom:100px;
+	background-color: #245a92a1;
+ }
+.product_main_1{ 
+   text-align:center;
+ }
+.product_main_1 h2{ 
+  font-size:35px;
+  color:#fff;
+  font-weight:bold;
+ }
+.product_main_1 p{ 
+  font-size:18px;
+  color:#fff;
+  padding-top:20px;
+ }
+/********************* product_details_end ****************/
+/*********************product****************/
+.center_product_main{
+  padding-top:50px;
+  padding-bottom:60px;
+  background:#ffffff85;
+  }
+.center_product{
+ background-image: url(../img/32.jpg);
+   }
+.center_product_1_inner h3{
+  color:#a3471e;
+  font-family: 'Akronim', cursive;
+  font-size:30px;
+  font-weight:bold;
+  }
+.center_product_1_inner h6{
+  margin-top:5px;
+  color:#a3471e;
+  font-weight:bold;
+  font-size:14px;
+  }
+.center_product_1_inner p{
+margin-top:10px;
+color:#a3471e;
+font-size:20px;
+  }
+.center_product_1_inner_1{
+margin-top:20px;  
+  }
+.center_product_1_inner_1 h2{
+font-weight:bold;  
+  }
+.center_product_1_inner_1 p{
+ font-size:18px;
+ margin-top:5px;
+  }
+.center_product_1_inner_1 h3{
+font-weight:bold;
+margin-top:20px;
+font-size:30px;
+  }
+.center_product_1_inner_1 h4{
+margin-top:20px;  
+  }
+.center_product_1_inner_1 h4 span{
+background:#a3471e;
+padding:10px 20px;
+border-radius:10px;
+color:#f4f4f4;
+  }
+
+#product{
+ padding-top:50px;
+ padding-bottom:50px; 
+  } 
+.product_1_left ul{
+ margin-top:10px;
+ margin-bottom:20px; 
+  } 
+.product_1_left ul li{
+  display:inline;
+  font-size:18px;
+  }
+.product_1_left ul .disabled{
+  color:#999; 
+   }
+.product_1_left ul .disabled:hover,
+.product_1_left ul .disabled:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+
+/* @author Tim himself */
+.heading_1{
+  border-top:1px solid #eee;
+  }
+.ziehharmonika h3 {
+	background: #fff;
+	color: #000;
+	text-align: left;
+	padding: 14px 12px;
+	cursor: pointer;
+	margin-top: 0;
+	padding-right: 40px;
+	transition: 0.25s all;
+	position: relative;
+	font-size:16px;
+	border-bottom:1px solid #eee;
+}
+.ziehharmonika p{
+  font-size:14px;
+  margin-bottom:10px;
+  margin-top:10px;
+  text-transform:uppercase;
+  }
+.ziehharmonika h3.active {
+	margin-bottom: 21px;
+	background:#f4f4f4;
+}
+.ziehharmonika h3::before {
+	content: attr(data-prefix);
+	font-size: 18px;
+	margin-right: 9px;
+}
+.ziehharmonika h3.alignLeft {
+	padding-left: 35px;
+}
+.ziehharmonika > div {
+	display: none;
+	background: #fff;
+	border: 1px solid #cdcdcd;
+	text-align: left;
+	padding: 5px 33px;
+	font-size:14px;
+	max-height:none;
+	overflow-y: hidden;
+}
+.ziehharmonika .arrowDown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13.0px 7.5px 0 7.5px;
+	border-color: #272e35 transparent transparent transparent;
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	transition: 0.25s all;
+	opacity: 0;
+}
+.ziehharmonika .active .arrowDown {
+	bottom: -13px;
+	border-color: #000 transparent transparent transparent;
+	opacity: 1;
+}
+.ziehharmonika .collapseIcon {
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	font-size: 18px;
+	font-weight: 300;
+	-ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+}
+.ziehharmonika .collapseIcon.alignLeft {
+	right: initial;
+	left: 20px;
+}
+
+.product_1_right{
+margin-bottom:20px;  
+  }
+.click{
+ margin-top:20px; 
+  }
+.click_1{
+padding:10px; 
+  }
+.click_1 p{
+margin-top:10px; 
+  }
+.click_1 p a{
+color:#000; 
+font-size:17px; 
+  }
+.click_1 h5{
+margin-top:10px; 
+font-size:22px; 
+font-weight:bold;
+  }
+.click_1 h4 a{
+ display:block;
+ background:#000;
+ margin-top:20px;
+ padding-top:15px;
+ padding-bottom:15px;
+ color:#f4f4f4;
+ border-radius:5px;
+ display:none;
+  }
+.click_1:hover h4 a{
+display:block;
+  }
+.click_1:hover {
+  box-shadow: 0 0 10px #ddd;
+  }
+.nav-tabs a{
+  color:#666; 
+  font-size:18px; 
+	}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+color:#000!important; 
+font-weight:bold; 
+  }
+.product_1_right_2 h4{
+ margin-top:30px;
+ margin-bottom:15px;
+ }
+.product_1_right_2 h4 a{
+ background:#000;
+ padding:15px;
+ color:#fff;
+ border:1px solid #000;
+ }
+.product_1_right_2 h4 a:hover{
+background:#fff;
+color:#000;
+ }
+/*********************product_end****************/
+
+
+@media screen and (max-width : 767px){
+.product_inner {
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.product_main_1 h2 {
+font-size: 30px;
+}
+#product {
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+}
+.product_1 p{ 
+text-align:center;
+padding-top:10px;
+}
+#product .nav-tabs>li {
+float: none;
+}
+}
+
+@media (min-width:470px) and (max-width:767px) { 
+}
+ 
+@media (min-width:768px) and (max-width:960px) { 
+.product_inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#product .ziehharmonika h3 {
+font-size: 10px;
+}
+#product .nav-tabs a {
+font-size: 14px;
+}
+#product .click_1 p a {
+font-size: 14px;
+}
+} 
+
+@media (min-width:961px) and (max-width:1200px) {
+.product_inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+#product .ziehharmonika h3 {
+font-size: 10px;
+}
+#product .nav-tabs a {
+font-size: 14px;
+}
+#product .click_1 p a {
+font-size: 14px;
+}
+}
+
+@media (min-width:1201px) and (max-width:1320px) {
+
+}
